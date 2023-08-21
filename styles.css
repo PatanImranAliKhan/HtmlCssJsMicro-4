@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #3b4664;
+}
+
+.calculator {
+  width: 400px;
+  margin: auto;
+  height: auto;
+  padding: 25px;
+  background-color: #252d44;
+  border-radius: 10px;
+  margin-top: 75px;
+}
+
+.result {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  height: 75px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+#showResult {
+  padding: 15px 25px;
+  float: right;
+  word-break: break-all;
+}
+
+.displayInt {
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.buttons-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.special-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buttons-list button {
+  max-width: 75px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.special-button button {
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.del {
+  background-color: #647299;
+  color: #fff;
+}
+
+.equal {
+  background-color: #d13f30;
+  color: #fff;
+}
+
+button:active {
+  border: 3px solid blue;
+}
+
+@media only screen and (max-width: 478px) {
+  .calculator {
+    width: 100%;
+    margin-top: 25px;
+  }
+  button {
+    width: 100%;
+  }
+}
